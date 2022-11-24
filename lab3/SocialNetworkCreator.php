@@ -2,13 +2,13 @@
 
 abstract class SocialNetworkCreator {
 
-  abstract public function create(): ISocialNetwork;
+  abstract public function create(string $login, string $password): ISocialNetwork;
 
 }
 
 class FacebookCreator extends SocialNetworkCreator {
   
-  function create(string $login, string $password): ISocialNetwork {
+  public function create(string $login, string $password): ISocialNetwork {
     return new Facebook($login, $password);
   }
 
@@ -16,7 +16,7 @@ class FacebookCreator extends SocialNetworkCreator {
 
 class LinkedInCreator extends SocialNetworkCreator {
   
-  function create(string $email, string $password): ISocialNetwork {
+  public function create(string $email, string $password): ISocialNetwork {
     return new LinkedIn($email, $password);
   }
 }
