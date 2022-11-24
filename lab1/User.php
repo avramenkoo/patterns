@@ -2,7 +2,7 @@
 
 class User {
   private $user;
-  private INotifier $notifier;
+  private $notifier;
 
   function __construct($user, INotifier $notifier) {
     // 1- $this->user = $user;

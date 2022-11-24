@@ -5,7 +5,7 @@ class Filesystem {
   // Singleton
 
   private static $instance;
-  private IStorage $storage;
+  private $storage;
   
   private function __construct() {}
 

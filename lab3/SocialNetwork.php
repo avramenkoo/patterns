@@ -7,8 +7,8 @@ interface ISocialNetwork {
 
 class Facebook implements ISocialNetwork {
   
-  private string $login;
-  private string $password;
+  private $login;
+  private $password;
 
   function __construct(string $login, string $password) {
     $this->login = $login;
@@ -26,8 +26,8 @@ class Facebook implements ISocialNetwork {
 
 class LinkedIn implements ISocialNetwork {
   
-  private string $email;
-  private string $password;
+  private $email;
+  private $password;
 
   function __construct(string $email, string $password) {
     $this->email = $email;

@@ -4,7 +4,7 @@ class Task {
   private $description;
   private $isComplete = false;
   private $user;
-  private ILogger $logger;
+  private $logger;
 
   function __construct($description, $user, ILogger $logger) {
     // 1- при створенні нового екземпляру класу, створюється завдання

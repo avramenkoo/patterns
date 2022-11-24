@@ -2,7 +2,7 @@
 
 class Project {
   private $owner;
-  private array $users;
+  private $users;
 
   function __construct($user) {
     // 1- $this->owner = $user
