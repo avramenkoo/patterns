@@ -1,7 +1,7 @@
 <?php
 
-require_once 'SocialNetwork.php'
-require_once 'SocialNetworkCreator.php'
+require_once 'SocialNetwork.php';
+require_once 'SocialNetworkCreator.php';
 
 $facebook = (new FacebookCreator)->create('mark', 'zUck3rbeRg!');
 $facebook->publishPost('Should I sell Facebook to Elon Musk?');

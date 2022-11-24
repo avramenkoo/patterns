@@ -1,7 +1,7 @@
 <?php
 
-require_once 'Storage.php'
-require_once 'Filesystem.php'
+require_once 'Storage.php';
+require_once 'Filesystem.php';
 
 $localDriveStorage = new S3Storage;
 
