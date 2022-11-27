@@ -1,5 +1,7 @@
 <?php
 
+// Design pattern: Factory Method
+
 require_once 'SocialNetwork.php';
 require_once 'SocialNetworkCreator.php';
 

@@ -1,5 +1,7 @@
 <?php
 
+// Design pattern: Singleton
+
 require_once 'Storage.php';
 require_once 'Filesystem.php';
 
